@@ -3,7 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 
 import Characters from './components/Characters.tsx';
 import CustomCharacter from './components/CustomCharacter.tsx';
-import './stylesheets/styles.css';
+import './stylesheets/styles.scss';
 
 class App extends Component {
   constructor(props) {

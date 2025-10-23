@@ -1,0 +1,113 @@
+/* reset default styles */
+
+header {
+  font-family: oswald;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+}
+// Child of charCard
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+}
+
+/* cards container */
+//Parent of the cards
+.charContainer {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(280px, 1fr));
+
+  /* justify-content: space-between; */
+
+  /* character card container */
+  //Child 1 of charContainer
+  .charCard {
+    background-color: white;
+    border: 1px solid rgb(0, 0, 0);
+    margin: 2px;
+    /* width: 280px; */
+    /* flex: 1 1 calc(20% - 20px); */
+  }
+}
+
+/* character card header */
+//Child 1  of charHead
+.charHeadContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  h2 {
+    margin-bottom: 0;
+    height: 80px;
+    margin-left: 40px;
+  }
+  .favIcon {
+    margin-bottom: 30px;
+    margin-right: 40px;
+    
+  }
+
+  div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+// .charHeadContainer div {
+//   width: 100%;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+// .charHeadContainer h2 {
+//   margin-bottom: 0;
+//   height: 100px;
+//   margin-left: 40px;
+// }
+
+// .charHeadContainer .favIcon {
+//   margin-bottom: 45px;
+//   margin-right: 40px;
+// }
+
+/* character additional details - films */
+//Sibling to charHeadContainer
+.charAddlDetail {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.charFilmsList {
+  margin-top: 0;
+}
+
+.charFilm {
+  margin-left: 0.5rem;
+}
+
+//Another parent
+.charDetailsList {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.charDetailsList li {
+  margin: 5px;
+  font-family: cabin;
+}
+
+//Child of charBtnOptions
+.primaryButton {
+}
+
+.secondaryButton {
+}
