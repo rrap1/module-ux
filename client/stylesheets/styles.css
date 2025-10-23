@@ -16,14 +16,23 @@ ul {
 
 /* cards container */
 .charContainer {
-  
+  display: grid;
+  grid-template-columns: repeat(5,minmax(280px,1fr)) ;
+ 
+  /* justify-content: space-between; */
+
 }
 
 /* character card container */
 .charCard {
   background-color:white;
   border: 1px solid rgb(0, 0, 0);
-  margin: 5px;
+  margin: 2px;
+  /* width: 280px; */
+  /* flex: 1 1 calc(20% - 20px); */
+
+ 
+  
 }
 
 /* character card header */
@@ -61,7 +70,9 @@ ul {
 }
 
 .charDetailsList{
-
+display:flex;
+align-items: center;
+ flex-direction: column; 
 }
 
 .charDetailsList li{ 
